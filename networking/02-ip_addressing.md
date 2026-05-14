@@ -39,7 +39,7 @@
 ## Subnet mask 
 - It is a 32-bit number used alongside IP address to seperate network id and host id 
 - It's structute is similar to IP address(eg: 255.255.255.0)
-- From above we conclide that the first three octet of IP address represents the NID and the last octet represent HID 
+- In a common subnet mask like 255.255.255.0, the first three octets usually represent the network portion and the last octet represent host portion 
 - For a computer to communicate with the another computer it checks if it is in same network or in different by checking the NID and uses switch if NID is same and uses router is NID is different
 
 ---
@@ -48,7 +48,7 @@
 
 ### Static IP address
 - It is the IP address that is assigned by the user manually and doesnt changes with time 
-- It is rarely used in todays time 
+- Less common for normal user devices but important for servers and infrastructure 
 
 ### Dynamic IP address 
 - It is the IP address that is assigned automatically from DHCP server and changes after some time 
