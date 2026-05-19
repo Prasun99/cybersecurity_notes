@@ -1,7 +1,7 @@
 # What I Did Today
 
 - Understood permissions in Linux
-- Practiced changing permissions for files and directories
+- Practiced changing permissions and ownership for files and directories
 
 ---
 
@@ -105,4 +105,10 @@ chmod go=rwx test1.txt
 chmod go-wx test1.txt
 chmod 444 test1.txt
 chmod 744 test1.txt
+```
+# File and Directory Ownership
+
+```bash
+chown -> changes the owner of a file or directory
+chgrp -> changes the group of a file or directory
 ```
