@@ -1,16 +1,15 @@
 # Grep and Piping in Linux
-
+---
 
 ## Grep
-``` bash
-grep is used to search text or patterns inside files or command output.
+- grep is used to search text or patterns inside files or command output.
 
 Basic syntax:
-
+``` bash
 grep "word" filename
-
+```
 Example:
-
+``` bash
 grep "hello" notes.txt
 
 This searches for the word "hello" inside notes.txt.
@@ -40,17 +39,20 @@ Shows lines that do NOT contain "hello".
 ``` 
 
 ## Piping
-```bash
-Pipe symbol   "|"
-Piping sends output of one command into another command.
+
+- Pipe symbol   "|"
+- Piping sends output of one command into another command.
 
 Syntax:
+``` bash
 command1 | command2
+```
+### Meaning:
+- command1 produces output
+- command2 uses that output as input
 
-Meaning:
-command1 produces output
-command2 uses that output as input
 Piping Examples
+``` bash
 Example 1
 ls -al | grep ".txt"
 ls -al lists files
