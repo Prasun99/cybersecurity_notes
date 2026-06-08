@@ -48,6 +48,25 @@ chmod o+t file_name
 
 --- 
 
+## etc_passwd
+- This file is used to store/view the account information
+- It contains username, UID, GID, home directory, and login shell
+- It doesnt show encrypted password
+
+```bash
+cat /etc/passwd
+```
+---
+## etc_shadow
+- This file is used to display the hashed password 
+- It also stores password aging information such as password expiry and warning periods.
+- Only the root user can view this file.
+```bash 
+sudo cat /etc/shadow
+```
+
+---
+
 ### Other thing i learned 
 - sudo -i => changes directory to root 
 - su - user_name => to change the user 
