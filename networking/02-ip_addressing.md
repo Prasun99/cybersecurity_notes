@@ -27,9 +27,21 @@
 - Private IP address can be same for devices in different network
 - It cannot access internet by its own 
 
+### Network Address Translation (NAT)
+- It is a process used by a router to convert private IP addresses to a public IP address and vice versa.
+- Since private IP addresses cannot be directly used on the internet, NAT allows devices in a private network to access the internet by translating their private IP to a public IP.
+- When a response comes from the internet, NAT uses its translation table to convert the public IP back to the correct private IP.
 
-#### Network Address Translation(NAT)
-- It is a networking method that allows multiple private IP addresses to communicate with the internet using one public IP address
+### Working of NAT
+- To identify which device initiated which connection, NAT uses a translation table, and in most cases it uses Port Address Translation (PAT).
+- When a device ( 192.168.1.2) sends data to the internet, the router assigns a temporary port number to that connection.
+- The router then replaces the private IP with its public IP (assigned by ISP) and maps it with that port number.
+Example:
+``` bash
+192.168.1.2:4001 → 203.0.113.10:4001
+```
+- When the response comes back, it includes the same port number, and the router checks its translation table to forward it to the correct private device.
+- Port numbers are dynamic and temporary, meaning they can change for each new connection.
 
 ---
 
